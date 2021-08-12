@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity >=0.5.0;
 
 contract TodoList {
   uint public taskCount = 0;
@@ -22,8 +22,8 @@ contract TodoList {
     bool completed
   );
 
-  constructor() public {
-    createTask("Check out dappuniversity.com");
+  constructor() {
+    createTask("Go To Sleep");
   }
 
   function createTask(string memory _content) public {
